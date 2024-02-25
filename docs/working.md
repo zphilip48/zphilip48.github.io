@@ -4,6 +4,25 @@ title: Working
 permalink: /working/
 ---
 
+<section class="articles">
+  {% for post in site.categories.working %}
+  <article class="article">
+    <h2 class="article-title">
+      <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
+    </h2>
+    <small class="date">{{post.date | date_to_string}}</small>
+    <div class="categories">
+      {% for c in post.categories %}
+      <a href="#!" data-base-url="{{site.baseurl}}" class="category"
+        >{{c}}</a
+      >
+      {% endfor %}
+    </div>
+    {{ post.content | strip_html | truncatewords: 50 }}
+  </article>
+  {% endfor %}
+</section>
+
 <div class="py-2">
     <p class="My project">
     <b>Ongoing My Study on OCR, Facebook Nougat related things</b>
