@@ -4,7 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Hi, I am *Zhu* Philip, My latest postion is Senior System Specification engineer at Nokia MN Architecture & Specification department, 2003-2023 at Nokia Co.
+Hi, I am *Zhu* Philip
+
+Graduated from Zhejiang University <img src="/assets/zu-logo.png" style="display: inline-block; margin: 0; zoom: 4%;" /> at 1996, Bachelor of Computer Science. 
+
+My last postion is Senior System Specification engineer at Nokia MN Architecture & Specification department, 2003-2023 at Nokia Co.
   <p>
     - Software engineer 2001-2002, Shanghai Bell-ALCATEL
   </p>
