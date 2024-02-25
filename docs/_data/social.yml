@@ -1,0 +1,23 @@
+email:
+  id: 'zphilip48@gmail.com'
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa fa-envelope'
+
+linkedin:
+  id: 'tianda-zhu-37a5b031'
+  href: 'https://www.linkedin.com/in/'
+  title: 'Linkedin'
+  fa-icon: 'fab fa-linkedin'
+
+github:
+  id: 'zphilip'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fab fa-github'
+
+youtube:
+  id: 'zphilip'
+  href: 'https://www.youtube.com/user/'
+  title: YouTube
+  fa-icon: 'fab fa-youtube'

@@ -1,0 +1,66 @@
+---
+layout: default
+title: Home
+---
+
+<!-- This loops through the paginated posts -->
+<section class="articles">
+  {% for post in paginator.posts %}
+  <article class="article">
+    <h2 class="article-title">
+      <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
+    </h2>
+    <small class="date">{{post.date | date_to_string}}</small>
+    <div class="categories">
+      {% for c in post.categories %}
+      <a href="#!" data-base-url="{{site.baseurl}}" class="category"
+        >{{c}}</a
+      >
+      {% endfor %}
+    </div>
+    {{ post.content | strip_html | truncatewords: 50 }}
+  </article>
+  {% endfor %}
+</section>
+
+<!-- This loops through the paginated posts --
+<section class="articles">
+  {% for post in site.posts %}
+  <article class="article">
+    <h2 class="article-title">
+      <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
+    </h2>
+    <small class="date">{{post.date | date_to_string}}</small>
+    <div class="categories">
+      {% for c in post.categories %}
+      <a href="#!" data-base-url="{{site.baseurl}}" class="category"
+        >{{c}}</a
+      >
+      {% endfor %}
+    </div>
+  </article>
+  {%endfor%}
+</section>   -->
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  <!-- <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span> -->
+</div>
+
+
+
+
+
+
